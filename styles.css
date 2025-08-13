@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* LEFT SIDE */
+.godtainer {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+}
+
+.top {
+    margin-bottom: 1rem;
+    margin-left: 6%;
+}
+
+.dashLink > :not(.top),
+.setSupPriv > div {
+    margin-left: 10%;
+}
+
+.dashLink,
+.setSupPriv {
+    display: grid;
+    gap: 18px;
+}
+
+.dashLink > div,
+.setSupPriv > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashLink {
+    margin-top: 1rem;
+}
+
+
+.notDashLogo {
+    object-fit: contain;
+    height: 100%;
+    width: minmax(3vw, 100vw);
+}
+
+.dashboard {
+    color: white;
+    background-color: rgb(255, 206, 174);
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    word-break: break-all;
+}
+
+.notDashLogo {
+    object-fit: contain;
+    height: 100%;
+    width: min(90px, 1.6vw);
+}
+
+.setSupPriv {
+    margin-top: 3.5rem;
+}
+
+/* NAV */
+
+.nav,
+.bottomNav,
+.topNav,
+.btns {
+    display: grid;
+}
+
+.nav {
+    grid-template-rows: repeat(auto-fit, 1fr);
+    background-color: rgb(255, 254, 255);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    gap: 20px;
+}
+
+.navIcons {
+    object-fit: contain;
+    height: 100%;
+    width: min(100px, 2vw);
+}
+
+.orange {
+    border-radius: 100%;
+    width: 50px;
+}
+
+
+.bigOrange {
+    width: 80px;
+    border-radius: 100%;
+}
+
+.bell {
+    width: 28px;
+}
+
+.topNav,
+.bottomNav {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.topNav {
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.search {
+    background-color: rgb(210, 206, 206);
+    border-style: none;
+    border-radius: 20px;
+    height: 30px;
+    align-self: center;
+}
+
+.topnavLeft {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+}
+
+.topnavRight {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-self: right;
+    align-items: center;
+}
+
+.bottomNav {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+
+.navItem {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.navText .hunnieTextLarge {
+    font-size: 25px;
+
+
+}
+
+.btns > button {
+    color: rgb(70, 69, 69);
+    background-color: rgb(254, 252, 175);
+    border-style: none;
+    border-radius: 20rem;
+    width: 90px;
+    height: 30px;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.btns {
+    grid-auto-flow: column;
+    justify-content: end;
+    
+}
+
+
+
+/* MAIN BODY */
+.main {
+    background-color: rgb(255, 248, 248);
+    border: 1px solid blue;
+    
+}
